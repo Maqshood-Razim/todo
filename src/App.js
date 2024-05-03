@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { type } from '@testing-library/user-event/dist/type';
 import './App.css';
+import Greet from './components/greet';
+import { useState,useRef, useEffect,useReducer,useMemo} from 'react';
+import Parentone from './Parentone';
+import MainRouter from './components/reactrouter/MainRouter';
+
+
+
+
+
 
 function App() {
+
+//   const [countone,setcountone]=useState(0)
+//   const [counttwo,setcounttwo]=useState(0)
+//   const incrmentone=()=>{
+//     setcountone(countone+1)
+//   }
+//   const incrmenttwo=()=>{
+//     setcounttwo(counttwo+1)
+//   }
+
+// const iseven= useMemo(()=>{
+//   let i=0
+//   while(i<700000000)
+//   i++
+//   return countone %2==0
+// },[countone]) 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  {/* <button onClick={incrmentone}>count 1:{countone}</button>
+  <span>{ iseven ?'even':'odd'}</span>
+  <button onClick={incrmenttwo}>count 2 :{counttwo}</button> */}
+
+  <MainRouter/>
     </div>
   );
 }
+
+
+
 
 export default App;
