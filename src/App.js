@@ -5,6 +5,7 @@ import Greet from './components/greet';
 import { useState,useRef, useEffect,useReducer,useMemo} from 'react';
 import Parentone from './Parentone';
 import MainRouter from './components/reactrouter/MainRouter';
+import ToDo from './Todoapp/ToDo';
 
 
 
@@ -34,7 +35,8 @@ function App() {
   <span>{ iseven ?'even':'odd'}</span>
   <button onClick={incrmenttwo}>count 2 :{counttwo}</button> */}
 
-  <MainRouter/>
+      {/* <MainRouter/> */}
+      <ToDo/>
     </div>
   );
 }
